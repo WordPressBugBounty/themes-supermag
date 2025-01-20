@@ -3,9 +3,9 @@
 Contributors: acmethemes
 Tags: blog, news, e-commerce, one-column, two-columns, three-columns, four-columns, left-sidebar, right-sidebar, custom-background, custom-colors, custom-menu, custom-logo, editor-style, footer-widgets, featured-images, full-width-template, rtl-language-support, sticky-post, theme-options, threaded-comments, translation-ready, wide-blocks
 Requires at least: 5.0
-Tested up to: 6.5
+Tested up to: 6.7
 Requires PHP: 5.6.20
-Stable tag: 3.1.1
+Stable tag: 3.1.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -74,6 +74,10 @@ GNU General Public License for more details.
 - supermag-banner-add.png self-created GPLv2
 
 == Change log ==
+
+= 3.1.2 - Jan 20 2025 =
+* Added: Enhanced support for the latest WordPress version.
+* Updated: Improved CSS compatibility.
 
 = 3.1.1 - April 09 2024 =
 * Updated: WordPress latest compatibility
