@@ -127,8 +127,8 @@ if ( !function_exists('supermag_sidebar_layout_callback') ) :
                     foreach ($supermag_sidebar_layout_options as $field) {
                         ?>
                         <div class="hide-radio radio-image-wrapper" style="float:left; margin-right:30px;">
-                            <input id="<?php echo $field['value']; ?>" type="radio" name="supermag_sidebar_layout" value="<?php echo $field['value']; ?>" <?php checked( $field['value'], $supermag_sidebar_layout ); ?>/>
-                            <label class="description" for="<?php echo $field['value']; ?>">
+                            <input id="<?php echo esc_attr( $field['value'] ); ?>" type="radio" name="supermag_sidebar_layout" value="<?php echo esc_attr( $field['value'] ); ?>" <?php checked( $field['value'], $supermag_sidebar_layout ); ?>/>
+                            <label class="description" for="<?php echo esc_attr( $field['value'] ); ?>">
                                 <img src="<?php echo esc_url( $field['thumbnail'] ); ?>" alt="" />
                             </label>
                         </div>

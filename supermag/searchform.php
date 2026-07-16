@@ -8,7 +8,7 @@
             if ( isset( $supermag_customizer_all_values['supermag-search-placholder']) ):
                 $placeholder_text = ' placeholder="' . esc_attr( $supermag_customizer_all_values['supermag-search-placholder'] ). '" ';
             endif; ?>
-            <input type="text" <?php echo  $placeholder_text ;?> id="menu-search" name="s" value="<?php echo get_search_query();?>">
+            <input type="text" <?php echo  $placeholder_text ;?> id="menu-search" name="s" value="<?php echo esc_attr( get_search_query() );?>">
             <button class="fa fa-search" type="submit" id="searchsubmit"></button>
         </div>
     </form>

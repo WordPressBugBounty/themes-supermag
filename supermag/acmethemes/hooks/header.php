@@ -192,7 +192,7 @@ if ( ! function_exists( 'supermag_header' ) ) :
 								<div class="bn-title">
 									<?php echo esc_html( $bn_title ); ?>
 								</div>
-								<ul class="<?php echo $ul_class; ?>">
+								<ul class="<?php echo esc_attr( $ul_class ); ?>">
 									<?php foreach ( $recent_posts as $recent ) : ?>
 										<li class="bn-content">
 											<a href="<?php echo esc_url( get_permalink( $recent['ID'] ) ); ?>" title="<?php echo esc_attr( $recent['post_title'] ); ?>">

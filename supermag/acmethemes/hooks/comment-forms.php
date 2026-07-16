@@ -20,7 +20,7 @@ if ( !function_exists('supermag_alter_comment_form') ) :
         $form['comment_field'] = '<p class="comment-form-comment"><label for="comment"></label> <textarea id="comment" name="comment" placeholder="'.esc_attr__( 'Comment', 'supermag' ).'" cols="45" rows="8" aria-required="true"></textarea></p>';
         $form['comment_notes_before'] = '';
         $form['label_submit'] = __( 'Add Comment', 'supermag' );
-        $form['title_reply'] = sprintf( __( '%s Leave a Comment', 'supermag' ), '<span></span>' );
+        $form['title_reply'] = '<span></span> ' . esc_html__( 'Leave a Comment', 'supermag' );
 
         return $form;
     }

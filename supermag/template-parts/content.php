@@ -43,7 +43,7 @@ $supermag_blog_archive_read_more = $supermag_customizer_all_values['supermag-blo
 		$no_fs = 'at-no-fs';
 	}
 	?>
-	<div class="entry-content <?php echo $no_fs;?>">
+	<div class="entry-content <?php echo esc_attr( $no_fs ); ?>">
 		<?php
 		the_excerpt();
 		if( !empty( $supermag_blog_archive_read_more ) ){
@@ -61,7 +61,7 @@ $supermag_blog_archive_read_more = $supermag_customizer_all_values['supermag-blo
         $entry_footer = 'featured-desc';
     }
     ?>
-	<footer class="entry-footer <?php echo $entry_footer; ?>">
+	<footer class="entry-footer <?php echo esc_attr( $entry_footer ); ?>">
         <?php
         if( 'cat-color' == $supermag_blog_archive_category_display_options ){
             ?>

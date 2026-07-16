@@ -66,11 +66,11 @@ if ( ! class_exists( 'supermag_posts_col' ) ) {
 
             ?>
             <p>
-                <label for="<?php echo $this->get_field_id( 'supermag_cat_title' ); ?>"><?php _e( 'Title:', 'supermag' ); ?></label>
-                <input class="widefat" id="<?php echo $this->get_field_id( 'supermag_cat_title' ); ?>" name="<?php echo $this->get_field_name( 'supermag_cat_title' ); ?>" type="text" value="<?php echo $supermag_col_posts_title; ?>" />
+                <label for="<?php echo esc_attr( $this->get_field_id( 'supermag_cat_title' ) ); ?>"><?php _e( 'Title:', 'supermag' ); ?></label>
+                <input class="widefat" id="<?php echo esc_attr( $this->get_field_id( 'supermag_cat_title' ) ); ?>" name="<?php echo esc_attr( $this->get_field_name( 'supermag_cat_title' ) ); ?>" type="text" value="<?php echo esc_attr( $supermag_col_posts_title ); ?>" />
             </p>
             <p>
-                <label for="<?php echo $this->get_field_id('supermag_cat'); ?>"><?php _e('Select Category', 'supermag'); ?></label>
+                <label for="<?php echo esc_attr( $this->get_field_id( 'supermag_cat' ) ); ?>"><?php _e('Select Category', 'supermag'); ?></label>
                 <?php
                 $supermag_dropown_cat = array(
                     'show_option_none'   => __('From Recent Posts','supermag'),
@@ -91,50 +91,50 @@ if ( ! class_exists( 'supermag_posts_col' ) ) {
                 ?>
             </p>
             <p>
-                <input class="widefat supermag-enable-first-featured" id="<?php echo $this->get_field_id( 'supermag_enable_first_featured' ); ?>" name="<?php echo $this->get_field_name( 'supermag_enable_first_featured' ); ?>" type="checkbox" <?php checked( 1, esc_attr( $supermag_enable_first_featured ), 1 ); ?>/>
-                <label for="<?php echo $this->get_field_id( 'supermag_enable_first_featured' ); ?>"><?php _e( 'Enable First Post Featured' ,'supermag'); ?></label>
+                <input class="widefat supermag-enable-first-featured" id="<?php echo esc_attr( $this->get_field_id( 'supermag_enable_first_featured' ) ); ?>" name="<?php echo esc_attr( $this->get_field_name( 'supermag_enable_first_featured' ) ); ?>" type="checkbox" <?php checked( 1, esc_attr( $supermag_enable_first_featured ), 1 ); ?>/>
+                <label for="<?php echo esc_attr( $this->get_field_id( 'supermag_enable_first_featured' ) ); ?>"><?php _e( 'Enable First Post Featured' ,'supermag'); ?></label>
                 <br />
             </p>
             <div class="supermag-enable-first-featured-toggle">
                 <p>
-                    <label for="<?php echo $this->get_field_id( 'supermag_post_col_layout' ); ?>">
+                    <label for="<?php echo esc_attr( $this->get_field_id( 'supermag_post_col_layout' ) ); ?>">
                         <?php _e( 'First Featured Post Layout', 'supermag' ); ?>
                         <br />
                         <small><?php _e( 'Enable First Post Featured to work this layout', 'supermag' ); ?></small>
                     </label>
-                    <select class="widefat" id="<?php echo $this->get_field_id( 'supermag_post_col_layout' ); ?>" name="<?php echo $this->get_field_name( 'supermag_post_col_layout' ); ?>">
+                    <select class="widefat" id="<?php echo esc_attr( $this->get_field_id( 'supermag_post_col_layout' ) ); ?>" name="<?php echo esc_attr( $this->get_field_name( 'supermag_post_col_layout' ) ); ?>">
                         <?php
                         foreach( $supermag_layout_arrays as $key => $supermag_column_array ){
-                            echo ' <option value="'.$key.'"'.selected( $supermag_post_col_layout, $key, 0).'>'.$supermag_column_array.'</option>';
+                            echo ' <option value="'.$key.'"'.selected( esc_attr( $supermag_post_col_layout ), $key, 0).'>'.$supermag_column_array.'</option>';
                         }
                         ?>
                     </select>
                 </p>
                 <p>
-                    <label for="<?php echo $this->get_field_id( 'supermag_post_col_first_featured_image_layout' ); ?>">
+                    <label for="<?php echo esc_attr( $this->get_field_id( 'supermag_post_col_first_featured_image_layout' ) ); ?>">
                         <?php _e( 'First Featured Post Image', 'supermag' ); ?>
                         <br />
                         <small><?php _e( 'Enable First Post Featured to work this layout', 'supermag' ); ?></small>
                     </label>
-                    <select class="widefat" id="<?php echo $this->get_field_id( 'supermag_post_col_first_featured_image_layout' ); ?>" name="<?php echo $this->get_field_name( 'supermag_post_col_first_featured_image_layout' ); ?>">
+                    <select class="widefat" id="<?php echo esc_attr( $this->get_field_id( 'supermag_post_col_first_featured_image_layout' ) ); ?>" name="<?php echo esc_attr( $this->get_field_name( 'supermag_post_col_first_featured_image_layout' ) ); ?>">
                         <?php
                         foreach( $choices as $key => $supermag_column_array ){
-                            echo ' <option value="'.$key.'"'.selected( $supermag_post_col_first_featured_image_layout, $key, 0).'>'.$supermag_column_array.'</option>';
+                            echo ' <option value="'.$key.'"'.selected( esc_attr( $supermag_post_col_first_featured_image_layout ), $key, 0).'>'.$supermag_column_array.'</option>';
                         }
                         ?>
                     </select>
                 </p>
             </div>
             <p>
-                <label for="<?php echo $this->get_field_id( 'supermag_post_col_normal_image_layout' ); ?>">
+                <label for="<?php echo esc_attr( $this->get_field_id( 'supermag_post_col_normal_image_layout' ) ); ?>">
                     <?php _e( 'Normal Featured Post Image', 'supermag' ); ?>
                     <br />
                     <small><?php _e( 'Enable First Post Featured to work this layout', 'supermag' ); ?></small>
                 </label>
-                <select class="widefat" id="<?php echo $this->get_field_id( 'supermag_post_col_normal_image_layout' ); ?>" name="<?php echo $this->get_field_name( 'supermag_post_col_normal_image_layout' ); ?>">
+                <select class="widefat" id="<?php echo esc_attr( $this->get_field_id( 'supermag_post_col_normal_image_layout' ) ); ?>" name="<?php echo esc_attr( $this->get_field_name( 'supermag_post_col_normal_image_layout' ) ); ?>">
                     <?php
                     foreach( $choices as $key => $supermag_column_array ){
-                        echo ' <option value="'.$key.'"'.selected( $supermag_post_col_normal_image_layout, $key, 0).'>'.$supermag_column_array.'</option>';
+                        echo ' <option value="'.$key.'"'.selected( esc_attr( $supermag_post_col_normal_image_layout ), $key, 0).'>'.$supermag_column_array.'</option>';
                     }
                     ?>
                 </select>

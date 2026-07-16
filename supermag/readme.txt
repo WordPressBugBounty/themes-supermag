@@ -2,10 +2,10 @@
 
 Contributors: acmethemes
 Tags: blog, news, e-commerce, one-column, two-columns, three-columns, four-columns, left-sidebar, right-sidebar, custom-background, custom-colors, custom-menu, custom-logo, editor-style, footer-widgets, featured-images, full-width-template, rtl-language-support, sticky-post, theme-options, threaded-comments, translation-ready, wide-blocks
-Requires at least: 5.0
-Tested up to: 6.8
-Requires PHP: 5.6.20
-Stable tag: 3.1.3
+Requires at least: 6.6
+Tested up to: 7.0
+Requires PHP: 7.4
+Stable tag: 4.0.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -58,13 +58,9 @@ GNU General Public License for more details.
 - https://pixabay.com/en/soccer-competition-game-men-males-673606/ - License CC0 Public Domain
 - https://pixabay.com/en/control-work-official-form-427510/ - License CC0 Public Domain
 
+
 == New screenshot: All License CC0 Public Domain : ==
 
-- https://pixabay.com/en/light-bulb-light-halogen-bulb-lamp-1407610/
-- https://pixabay.com/en/cranes-construction-build-site-1758459/
-- https://pixabay.com/en/jetliner-boeing-747sp-modified-1767818/
-- https://pixabay.com/en/drone-multicopter-dji-inspire-1080844/
-- https://pixabay.com/en/woman-bike-urban-leisure-wheel-1426435/
 
 - no-image-240-172.jpg self-created GPLv2
 - no-image-660-365.jpg self-created GPLv2
@@ -74,6 +70,10 @@ GNU General Public License for more details.
 - supermag-banner-add.png self-created GPLv2
 
 == Change log ==
+
+= 4.0.0 - Jul 14 2026 =
+* Updated: WordPress 7.0 compatibility
+* Updated: Requires PHP 7.4
 
 = 3.1.3 - Apr 19 2025 =
 * Added: Tested with the latest WordPress.
@@ -316,3 +316,13 @@ GNU General Public License for more details.
 2. Set Thumbnail size 500*280, Medium size 660*365, Large size 840*480
 3. Also, check this 'Crop thumbnail to exact dimensions (normally thumbnails are proportional)''
 3. Click Save Changes
+
+== Installation ==
+
+1. Download the theme zip file.
+2. In your Admin Dashboard go to Appearance > Themes.
+3. Click on the Add New button.
+4. Click Upload Plugin and then click Choose File.
+5. Select the downloaded zip file and click Install Now.
+6. After installation, click Activate.
+

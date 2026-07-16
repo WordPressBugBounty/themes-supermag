@@ -107,6 +107,8 @@ require_once supermag_file_directory('acmethemes/metabox/metabox.php');
  * Theme options page.
  */
 if ( is_admin() ) {
+add_action('init', function() {
     require_once supermag_file_directory('acmethemes/at-theme-info/class-at-theme-info.php');
+    });
     require_once supermag_file_directory('acmethemes/admin-notice/class-admin-notice-handler.php');
 }

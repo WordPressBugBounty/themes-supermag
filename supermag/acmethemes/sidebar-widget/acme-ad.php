@@ -49,12 +49,12 @@ if ( ! class_exists( 'supermag_ad_widget' ) ) :
                 ?>
             </p>
             <p>
-                <label for="<?php echo $this->get_field_id( 'supermag_ad_title' ); ?>"><?php _e( 'Title:', 'supermag' ); ?></label>
-                <input class="widefat" id="<?php echo $this->get_field_id( 'supermag_ad_title' ); ?>" name="<?php echo $this->get_field_name( 'supermag_ad_title' ); ?>" type="text" value="<?php echo esc_attr( $supermag_ad_title ); ?>" />
+                <label for="<?php echo esc_attr( $this->get_field_id( 'supermag_ad_title' ) ); ?>"><?php _e( 'Title:', 'supermag' ); ?></label>
+                <input class="widefat" id="<?php echo esc_attr( $this->get_field_id( 'supermag_ad_title' ) ); ?>" name="<?php echo esc_attr( $this->get_field_name( 'supermag_ad_title' ) ); ?>" type="text" value="<?php echo esc_attr( $supermag_ad_title ); ?>" />
             </p>
             <h4 class="accordion-toggle"><?php _e( 'Advertisement Image', 'supermag' ); ?></h4>
             <p>
-                <label for="<?php echo $this->get_field_id('supermag_ad_image'); ?>">
+                <label for="<?php echo esc_attr( $this->get_field_id( 'supermag_ad_image' ) ); ?>">
                     <?php _e( 'Select Advertisement Image', 'supermag' ); ?>
                 </label>
                 <?php
@@ -66,21 +66,21 @@ if ( ! class_exists( 'supermag_ad_widget' ) ) :
                 <span class="img-preview-wrap" <?php echo esc_attr( $supermag_display_none ); ?>>
                     <img class="widefat" src="<?php echo esc_url( $supermag_ad_image ); ?>" alt="<?php _e( 'Image preview', 'supermag' ); ?>"  />
                 </span><!-- .ad-preview-wrap -->
-                <input type="text" class="widefat" name="<?php echo $this->get_field_name('supermag_ad_image'); ?>" id="<?php echo $this->get_field_id('supermag_ad_image'); ?>" value="<?php echo esc_url( $supermag_ad_image ); ?>" />
+                <input type="text" class="widefat" name="<?php echo esc_attr( $this->get_field_name( 'supermag_ad_image' ) ); ?>" id="<?php echo esc_attr( $this->get_field_id( 'supermag_ad_image' ) ); ?>" value="<?php echo esc_url( $supermag_ad_image ); ?>" />
                 <input type="button" value="<?php _e( 'Upload Image', 'supermag' ); ?>" class="button media-image-upload" data-title="<?php _e( 'Select Ad Image','supermag'); ?>" data-button="<?php _e( 'Select Ad Image','supermag'); ?>"/>
                 <input type="button" value="<?php _e( 'Remove Image', 'supermag' ); ?>" class="button media-image-remove" />
             </p>
             <p>
-                <label for="<?php echo $this->get_field_id( 'supermag_ad_img_alt' ); ?>"><?php _e( 'Alt Text:', 'supermag' ); ?></label>
-                <input class="widefat" id="<?php echo $this->get_field_id( 'supermag_ad_img_alt' ); ?>" name="<?php echo $this->get_field_name( 'supermag_ad_img_alt' ); ?>" type="text" value="<?php echo esc_attr( $supermag_ad_img_alt ); ?>" />
+                <label for="<?php echo esc_attr( $this->get_field_id( 'supermag_ad_img_alt' ) ); ?>"><?php _e( 'Alt Text:', 'supermag' ); ?></label>
+                <input class="widefat" id="<?php echo esc_attr( $this->get_field_id( 'supermag_ad_img_alt' ) ); ?>" name="<?php echo esc_attr( $this->get_field_name( 'supermag_ad_img_alt' ) ); ?>" type="text" value="<?php echo esc_attr( $supermag_ad_img_alt ); ?>" />
             </p>
             <p>
-                <label for="<?php echo $this->get_field_id( 'supermag_ad_link' ); ?>"><?php _e( 'Link URL:', 'supermag' ); ?></label>
-                <input class="widefat" id="<?php echo $this->get_field_id( 'supermag_ad_link' ); ?>" name="<?php echo $this->get_field_name( 'supermag_ad_link' ); ?>" type="text" value="<?php echo esc_attr( $supermag_ad_link ); ?>" />
+                <label for="<?php echo esc_attr( $this->get_field_id( 'supermag_ad_link' ) ); ?>"><?php _e( 'Link URL:', 'supermag' ); ?></label>
+                <input class="widefat" id="<?php echo esc_attr( $this->get_field_id( 'supermag_ad_link' ) ); ?>" name="<?php echo esc_attr( $this->get_field_name( 'supermag_ad_link' ) ); ?>" type="text" value="<?php echo esc_attr( $supermag_ad_link ); ?>" />
             </p>
             <p>
-                <input id="<?php echo $this->get_field_id( 'supermag_ad_new_window' ); ?>" name="<?php echo $this->get_field_name( 'supermag_ad_new_window' ); ?>" type="checkbox" <?php checked( 1 == $supermag_ad_new_window ? $instance['supermag_ad_new_window'] : 0); ?> />
-                <label for="<?php echo $this->get_field_id( 'supermag_ad_new_window' ); ?>"><?php _e( 'Open in new window', 'supermag' ); ?></label>
+                <input id="<?php echo esc_attr( $this->get_field_id( 'supermag_ad_new_window' ) ); ?>" name="<?php echo esc_attr( $this->get_field_name( 'supermag_ad_new_window' ) ); ?>" type="checkbox" <?php checked( 1 == $supermag_ad_new_window ? $instance['supermag_ad_new_window'] : 0); ?> />
+                <label for="<?php echo esc_attr( $this->get_field_id( 'supermag_ad_new_window' ) ); ?>"><?php _e( 'Open in new window', 'supermag' ); ?></label>
             </p>
             <hr />
             <?php
@@ -147,7 +147,7 @@ if ( ! class_exists( 'supermag_ad_widget' ) ) :
             }
             if ( !empty( $ad_content_image ) ) {
                 echo '<div class="supermag-ainfo-widget">';
-                echo $ad_content_image;
+                echo wp_kses_post( $ad_content_image );
                 echo '</div>';
             }
             echo $args['after_widget'];
